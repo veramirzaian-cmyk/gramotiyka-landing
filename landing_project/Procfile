@@ -1,0 +1,3 @@
+web: gunicorn landing_project.wsgi
+
+worker: python bot/bot.py

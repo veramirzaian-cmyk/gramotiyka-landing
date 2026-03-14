@@ -1,0 +1,14 @@
+<section>
+    <div class="container">
+        <h2>Наші переваги</h2>
+
+        <div style="display:flex; gap:30px; justify-content:center; flex-wrap:wrap;">
+            {% for feature in features %}
+                <div style="background:white; padding:30px; border-radius:12px; width:300px; box-shadow:0 5px 15px rgba(0,0,0,0.05);">
+                    <h3>{{ feature.title }}</h3>
+                    <p>{{ feature.description }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
